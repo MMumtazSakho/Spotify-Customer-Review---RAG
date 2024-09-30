@@ -57,6 +57,7 @@ tools yang digunakan
 - Mistral embedding -> untuk embedding
 - Langchain 
 - Chroma Database ->Penyimpanan embedding/vektor
+- sqlite3 -> menyimpan dataset review untuk table analytics generation
 
 
 ## Cara Run
