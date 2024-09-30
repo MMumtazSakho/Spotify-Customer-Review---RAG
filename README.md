@@ -63,6 +63,13 @@ tools yang digunakan
   
 - Setelah menginstall semua library, download folder vektor database, dan membuat API, run "streamlit run app.py" di terminal
 
+## Demo
+
+https://github.com/user-attachments/assets/04d1ab2d-7ae5-43bf-9e78-12a5354707f1
+
+<br>
+youtube: https://youtu.be/ApIcF1UXWR8
+
 ## Penting
 Gunakan API dengan bijak:)
 
