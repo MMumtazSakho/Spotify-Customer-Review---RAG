@@ -45,7 +45,7 @@ tools yang digunakan
 - Download folder chromadb di link ini (Tidak bisa ter-upload di github (2.7 GB):
   https://drive.google.com/drive/folders/13wTK9UZ_GNDoommmod-SnkHALXJBHKbL?usp=sharing
   letakkan folder tersebut di forlder projek (mekari-sakho)
-- Buat API key di Openai (https://platform.openai.com/api-keys) (<strong>Berbayar</strong>) dan Mistral (https://console.mistral.ai/) (<strong>Gratis</strong>)
+- Buat API key di Openai (https://platform.openai.com/api-keys) (<strong>Berbayar</strong>) dan Mistral (https://console.mistral.ai/) (<strong>Gratis saat ini</strong>)
 - Setelah menginstall semua library, download folder vektor database, dan membuat API, run "streamlit run app.py" di terminal
 
 
