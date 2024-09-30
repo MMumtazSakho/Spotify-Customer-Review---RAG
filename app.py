@@ -180,7 +180,7 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
 
                 total_tokens = stream.usage.total_tokens
                 st.session_state.total_tokens += total_tokens  # Tambahkan total token
-                st.write(f"Total Tokens: {st.session_state.total_tokens}")
+                #st.write(f"Total Tokens: {st.session_state.total_tokens}")
 
         except Exception as e:
             print('assistant: ', stream.choices[0].message.content)
@@ -190,7 +190,7 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
 
             total_tokens = stream.usage.total_tokens
             st.session_state.total_tokens += total_tokens  # Tambahkan total token
-            st.write(f"Total Tokens: {st.session_state.total_tokens}")
+            #st.write(f"Total Tokens: {st.session_state.total_tokens}")
 
 
 
