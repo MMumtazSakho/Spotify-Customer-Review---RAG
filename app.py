@@ -13,7 +13,12 @@ if "messages" not in st.session_state:
     st.session_state.messages.append({"role": "system", 
                                       "content": "You are a spotify user review assistant for developer team. Use the supplied tools to assist the user if needed."})
     st.session_state.dummy_messages = []
+    st.session_state.option1 = True
+    st.session_state.option1 = True
+    st.session_state.llm_tools = tools
 
+st.session_state.option1 = st.checkbox('Retrieval generation',value=True)
+st.session_state.option2 = st.checkbox('Table generation', value=True) 
 for i, message in enumerate(st.session_state.dummy_messages):
     with st.chat_message(message["role"]):
         if message["role"] != 'system':
@@ -25,6 +30,17 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
+    if (st.session_state.option1 and st.session_state.option2):
+        st.session_state.llm_tools = tools
+        print('dua duanya')
+    elif st.session_state.option1 and st.session_state.option2==False:
+        st.session_state.llm_tools = [tools[0]]
+        print('option1')
+    elif st.session_state.option2 and st.session_state.option1==False:
+        st.session_state.llm_tools = [tools[1]]
+        print('option2')
+        
+
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
             model="gpt-4o-mini",
@@ -33,7 +49,7 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
                 {"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages
             ],
-            tools=tools
+            tools=st.session_state.llm_tools
         )
         try:
             # ngambil data tool_call
@@ -54,7 +70,7 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
                             {"role": m["role"], "content": m["content"]}
                             for m in st.session_state.messages
                         ],
-                        tools=tools
+                        # tools=st.session_state.llm_tools
                     )
                     rag_response = stream.choices[0].message.content
                     st.session_state.retrieval.append(retrieve_chunk)
@@ -97,10 +113,10 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
             response = st.write(stream.choices[0].message.content)
             st.session_state.messages.append({"role": "assistant", "content": stream.choices[0].message.content})
             st.session_state.dummy_messages.append({"role": "assistant", "content": stream.choices[0].message.content})
-
-
             total_tokens = stream.usage.total_tokens
-            st.session_state.total_tokens += total_tokens  
+            st.session_state.total_tokens += total_tokens 
+
+
 
 
 
