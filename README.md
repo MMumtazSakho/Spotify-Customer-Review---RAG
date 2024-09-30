@@ -18,3 +18,14 @@ tools yang digunakan
 - Mistral embedding -> untuk embedding
 - Langchain 
 - Chroma Database ->Penyimpanan embedding/vektor
+
+## Cara Run
+- Download folder chromadb di link ini (Tidak bisa ter-upload di github (2.7 GB):
+  https://drive.google.com/drive/folders/13wTK9UZ_GNDoommmod-SnkHALXJBHKbL?usp=sharing
+  letakkan folder tersebut di forlder projek (mekari-sakho)
+- Setelah menginstall semua library, run "streamlit run app.py" di terminal
+
+## Disclaimer
+Gunakan API secukupnya :)
+
+
