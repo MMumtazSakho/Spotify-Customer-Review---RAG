@@ -96,7 +96,7 @@ def retrieval_augmented_generation(user_message):
 
     return  prompt
 
-
+# Ini data yg digunakan intuk untuk mengirim tool ke LLM
 tools = [
     {
         "type": "function",
