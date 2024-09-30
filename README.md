@@ -1,8 +1,10 @@
 # mekari-sakho
 
-# RAG dengan Function Calling Tool
+# Chatbot LLM dengan RAG dan Table analytics generation berbasis function calling tool
 ## Arsitektur sistem
-![image](https://github.com/user-attachments/assets/44de1965-b314-4932-9a14-14d3e8c393f4)
+
+![image](https://github.com/user-attachments/assets/fe79940d-cb4e-4401-8b40-1bd3016e011e)
+
 ### Mengapa menggunakan Function calling tool?
 RAG (Retrieval-Augmented Generation) berbasis function calling tool memberikan solusi untuk menjawab pertanyaan dengan efisien.  
 Bayangkan, jika pengguna bertanya tentang review Spotify, misalnya: <br> 
@@ -31,8 +33,10 @@ Pada task ini, saya menggunakan gpt-40-mini karena kemampuannya beradaptasi deng
   <img src="https://github.com/user-attachments/assets/fc273299-e8f8-4a17-a09a-d938426e3de6" alt="Review Spotify" width="500"/><br>
 - Test Case 4<br>
   <img src="https://github.com/user-attachments/assets/37c98b86-89f5-4260-8fb9-963334e2447b" width="500"/><br>
-- Dialog Test Case
-  <img width="1382" alt="Poster_semhas_sakho (2)" src="https://github.com/user-attachments/assets/65ced92d-e832-4ff7-a876-2cadf3b008f9">
+- Dialog Test Case<br>
+  <img width="500" alt="Poster_semhas_sakho (2)" src="https://github.com/user-attachments/assets/65ced92d-e832-4ff7-a876-2cadf3b008f9">
+- Tabel analytics Test<br>
+  <img width="500" alt="Poster_semhas_sakho (2)" src="https://github.com/user-attachments/assets/83f64868-ef43-4c95-add5-ff695d3fdecd">
 
   
 
@@ -65,10 +69,12 @@ tools yang digunakan
 
 ## Demo
 
-https://github.com/user-attachments/assets/04d1ab2d-7ae5-43bf-9e78-12a5354707f1
+
+https://github.com/user-attachments/assets/5d0aecba-be33-4909-a23d-be76e5ee1d94
+
 
 <br>
-youtube: https://youtu.be/ApIcF1UXWR8
+https://youtu.be/JZqndvh6D-w
 
 ## Penting
 Gunakan API dengan bijak:)
