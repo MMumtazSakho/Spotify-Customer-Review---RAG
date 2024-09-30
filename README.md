@@ -19,7 +19,23 @@ Dengan pendekatan function calling RAG, sistem menawarkan pengalaman interaktif 
 | function call | very good, adaptive | Bad, always calling for function |
 | Accuracy | overall good, depends on retrieved data | overall good, depends on retrieved data |
 <br>
-Pada task ini, saya menggunakan gpt-40-mini karena kemampuannya beradaptasi dengan function calling tool RAG.
+Pada task ini, saya menggunakan gpt-40-mini karena kemampuannya beradaptasi dengan function calling tool RAG. <br>
+
+## Test Case
+
+- Test Case 1 <br>
+  <img src="https://github.com/user-attachments/assets/c2d12ab4-ef81-460f-abbc-7f4fb57a3c64" alt="Review Spotify" width="500"/><br>
+- Test Case 2<br>
+  <img src="https://github.com/user-attachments/assets/025343fa-a9ec-4b44-9cf5-1dbe04e274ac" alt="Review Spotify" width="500"/><br>
+- Test Case 3<br>
+  <img src="https://github.com/user-attachments/assets/fc273299-e8f8-4a17-a09a-d938426e3de6" alt="Review Spotify" width="500"/><br>
+- Test Case 4<br>
+  <img src="https://github.com/user-attachments/assets/37c98b86-89f5-4260-8fb9-963334e2447b" width="500"/><br>
+- Dialog Test Case
+  <img width="1382" alt="Poster_semhas_sakho (2)" src="https://github.com/user-attachments/assets/65ced92d-e832-4ff7-a876-2cadf3b008f9">
+
+  
+
 
 ## Perbandingan Model Embbeding -> text-embedding-3-small VS mistral-embed
 
