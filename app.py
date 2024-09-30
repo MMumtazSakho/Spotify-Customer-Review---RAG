@@ -39,7 +39,9 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
     elif st.session_state.option2 and st.session_state.option1==False:
         st.session_state.llm_tools = [tools[1]]
         print('option2')
-        
+    elif st.session_state.option2==False and st.session_state.option1==False:
+        st.session_state.llm_tools = None
+        print('option2')
 
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
