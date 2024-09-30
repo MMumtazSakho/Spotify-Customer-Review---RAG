@@ -13,7 +13,7 @@ import streamlit as st
 import numpy as np
 import json
 
-api_key = os.environ["OPENAI_API_KEY"]="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"
+api_key = os.environ["OPENAI_API_KEY"]= API
 client = OpenAI()
 
 
