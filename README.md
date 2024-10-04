@@ -15,13 +15,23 @@ Dengan pendekatan function calling RAG, sistem menawarkan pengalaman interaktif 
 <img src="https://github.com/user-attachments/assets/256af3e9-450e-4b72-9822-2c59889f58d2" alt="Review Spotify" width="500"/>
 ## Perbandingan LLM -> gpt-40-mini VS Mistral-Large
 
-| Attempt | gpt-40-mini | Mistral-Large  |
+| Attempt | gpt-4o-mini | Mistral-Large  |
 | ------- | --- | --- |
 | Cost | $0.150 / 1M input tokens & $0.600 / 1M output tokens | $2 /1M input tokens & $6 /1M output tokens |
 | function call | very good, adaptive | Bad, always calling for function |
 | Accuracy | overall good, depends on retrieved data | overall good, depends on retrieved data |
 <br>
-Pada task ini, saya menggunakan gpt-40-mini karena kemampuannya beradaptasi dengan function calling tool RAG. <br>
+Pada task ini, saya menggunakan gpt-4o-mini karena kemampuannya beradaptasi dengan function calling tool RAG. <br>
+
+## Perbandingan Model Embbeding -> text-embedding-3-small VS mistral-embed
+
+| Attempt | text-embedding-3-small | mistral-embed  |
+| ------- | --- | --- |
+| Cost | $0.020 / 1M tokens | $0.1 /1M tokens |
+| Size | 1536 | 1024 |
+| Quality | good | good |
+<br>
+Pada task ini, saya menggunakan mistral-embed untuk embedding.
 
 ## Test Case
 
@@ -39,18 +49,6 @@ Pada task ini, saya menggunakan gpt-40-mini karena kemampuannya beradaptasi deng
   <img width="500" alt="Poster_semhas_sakho (2)" src="https://github.com/user-attachments/assets/83f64868-ef43-4c95-add5-ff695d3fdecd">
 
   
-
-
-## Perbandingan Model Embbeding -> text-embedding-3-small VS mistral-embed
-
-| Attempt | text-embedding-3-small | mistral-embed  |
-| ------- | --- | --- |
-| Cost | $0.020 / 1M tokens | $0.1 /1M tokens |
-| Size | 1536 | 1024 |
-| Quality | good | good |
-<br>
-Pada task ini, saya menggunakan mistral-embed untuk embedding.
-
 ## TOOLS
 tools yang digunakan
 - Openai -> untuk LLM
@@ -77,6 +75,5 @@ https://github.com/user-attachments/assets/5d0aecba-be33-4909-a23d-be76e5ee1d94
 <br>
 https://youtu.be/JZqndvh6D-w
 
-## Penting
-Gunakan API dengan bijak:)
+
 
