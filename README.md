@@ -13,7 +13,7 @@ Bayangkan, jika pengguna bertanya tentang review Spotify, misalnya: <br>
 Sistem dapat mengambil data review dari sumber eksternal untuk memberikan jawaban yang relevan. Namun ketika pengguna melanjutkan dengan pertanyaan lebih spesifik, seperti "kartu Maestro itu apa dan dari mana?", Pendekatan RAG biasa tidaklah efektif.
 Dengan pendekatan function calling RAG, sistem menawarkan pengalaman interaktif efisien dalam segi token input.<br>
 <img src="https://github.com/user-attachments/assets/256af3e9-450e-4b72-9822-2c59889f58d2" alt="Review Spotify" width="500"/>
-## Perbandingan LLM -> gpt-40-mini VS Mistral-Large
+## Perbandingan LLM -> gpt-4o-mini VS Mistral-Large
 
 | Attempt | gpt-4o-mini | Mistral-Large  |
 | ------- | --- | --- |
