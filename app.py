@@ -115,6 +115,13 @@ if prompt := st.chat_input("I want to know the user review about spotify...?"):
             response = st.write(stream.choices[0].message.content)
             st.session_state.messages.append({"role": "assistant", "content": stream.choices[0].message.content})
             st.session_state.dummy_messages.append({"role": "assistant", "content": stream.choices[0].message.content})
+            if stream.choices[0].message.content == None:
+                response = st.write("Maaf, terdapat kesalahan. mohon coba dengan pertanyaan lain")
+                st.session_state.messages.pop()
+                st.session_state.messages.append({"role": "assistant", "content": "Maaf, terdapat kesalahan. mohon coba dengan pertanyaan lain"})
+                st.session_state.dummy_messages.pop()
+                st.session_state.dummy_messages.append({"role": "assistant", "content": "Maaf, terdapat kesalahan. mohon coba dengan pertanyaan lain"})
+            
             total_tokens = stream.usage.total_tokens
             st.session_state.total_tokens += total_tokens 
 
