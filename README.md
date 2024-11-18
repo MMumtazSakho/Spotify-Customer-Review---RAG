@@ -58,10 +58,6 @@ tools yang digunakan
 - sqlite3 -> menyimpan dataset review untuk table analytics generation
 
 
-## Demo
-
-
-https://github.com/user-attachments/assets/5d0aecba-be33-4909-a23d-be76e5ee1d94
 
 
 
