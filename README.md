@@ -1,4 +1,4 @@
-# mekari-sakho
+
 
 # Chatbot LLM dengan RAG dan Table analytics generation berbasis function calling tool
 ## Arsitektur sistem
@@ -58,22 +58,13 @@ tools yang digunakan
 - sqlite3 -> menyimpan dataset review untuk table analytics generation
 
 
-## Cara Run
-- Download folder chromadb di link ini (Tidak bisa ter-upload di github (2.7 GB):
-  https://drive.google.com/drive/folders/13wTK9UZ_GNDoommmod-SnkHALXJBHKbL?usp=sharing
-  letakkan folder tersebut di forlder projek (mekari-sakho). (nama folder dan file database chroma usahakan sama untuk mencegah error)
-- Buat API key di Openai (https://platform.openai.com/api-keys) (<strong>Berbayar</strong>) atau gunakan API saya (https://drive.google.com/file/d/1nVIdmIGrNETkYYBg1hddvzDrP0xiOdNa/view?usp=sharing) dan Mistral (https://console.mistral.ai/) (<strong>Gratis saat ini</strong>).
-  
-- Setelah menginstall semua library, download folder vektor database, dan membuat API, run "streamlit run app.py" di terminal
-
 ## Demo
 
 
 https://github.com/user-attachments/assets/5d0aecba-be33-4909-a23d-be76e5ee1d94
 
 
-<br>
-https://youtu.be/JZqndvh6D-w
+
 
 
 
